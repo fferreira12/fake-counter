@@ -1,0 +1,25 @@
+{
+  "name": "fake-counter-core",
+  "version": "1.0.0",
+  "description": "App that tracks fake news sent via whatsapp, in order to see which person is the biggest fake news sender in a given group",
+  "main": "dist/fakeApp.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test-run": "mocha -r ts-node/register test/**/*.spec.ts ",
+    "test-debug": "mocha --inspect-brk -r ts-node/register test/**/*.spec.ts ",
+    "test-watch": "mocha -w --extension ts -r ts-node/register test/**/*.spec.ts",
+    "build": "tsc"
+  },
+  "author": "Fernando Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.1",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}
