@@ -1,0 +1,24 @@
+$border-margin: 1rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: calc(100vh - 2 * #{$border-margin});
+
+  margin: $border-margin;
+  padding: 1rem 0.5rem;
+  border-radius: 50px;
+  background: #55b9f3;
+  box-shadow:  20px 20px 60px #489dcf, 
+               -20px -20px 60px #62d5ff;
+}
+
+h1 {
+  color: #f3db55;
+}
+
+.container .stretch {
+  width: 100%;
+}

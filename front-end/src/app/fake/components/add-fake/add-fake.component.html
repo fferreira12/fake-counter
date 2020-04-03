@@ -1,0 +1,12 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="file">Add an image:</label>
+    </div>
+
+  <app-image-input (imageSelected)="onImageSelected($event)"></app-image-input>
+
+    <p *ngIf="file">File Selected: {{file.name}}</p>
+
+  </form>
+</div>
